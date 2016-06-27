@@ -1,0 +1,13 @@
+for i in 0...100{
+
+    if i>29 && i<41 {
+         print("\(i)\t Viva Swift!!!")
+    }else if i%5 == 0  {
+        print("\(i)\t Bingo!!!")
+    }else if i%2 == 0{
+        print("\(i)\t par!!!")   
+    }else {
+        print("\(i)\t impar!!!") 
+    }
+    
+}
