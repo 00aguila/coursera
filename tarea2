@@ -2,7 +2,7 @@ enum Velocidades : Int {
     case apagado = 0, velocidadBaja = 20, velocidadMedia = 50, velocidadAlta = 120
     init (velocidadInicial : Velocidades){
        
-        self.velocidadInicial = .apagado
+        self = velocidadInicial
     }
 }
 
@@ -10,10 +10,10 @@ class Auto {
     var velocidad = Velocidades()
     
     init(){
-        
+         velocidad = Velocidades.init(velocidadInicial: .Apagado)
     }
     
-    func cambioDeVelocidad() -> (int,String) {
+    func cambioDeVelocidad() -> (acutual : int, velocidadEnCadena : String) {
         
         return 
     } 
