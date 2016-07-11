@@ -17,16 +17,16 @@ class Auto {
         switch velocidad {
         case .Apagado:
             velocidad = .VelocidadBaja
-            return ("Apagado", Velocidades.Apagado.rawValue)
+            return (Velocidades.Apagado.rawValue, "Apagado")
         case .VelocidadBaja:
             velocidad = .VelocidadMedia
-            return ("Velocidad Baja", Velocidades.VelocidadBaja.rawValue)
+            return (Velocidades.VelocidadBaja.rawValue, "Velocidad Baja")
         case .VelocidadMedia:
             velocidad = .VelocidadAlta
-            return ("Velocidad Media", Velocidades.VelocidadMedia.rawValue)
+            return (Velocidades.VelocidadMedia.rawValue, "Velocidad Media")
         case .VelocidadAlta:
             velocidad = .VelocidadMedia
-            return ("Velocidad Alta", Velocidades.VelocidadAlta.rawValue)
+            return (Velocidades.VelocidadAlta.rawValue, "Velocidad Alta")
         }
 
     } 
