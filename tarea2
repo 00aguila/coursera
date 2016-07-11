@@ -13,7 +13,7 @@ class Auto {
          velocidad = Velocidades.init(velocidadInicial: .Apagado)
     }
     
-    func cambioDeVelocidad() -> (acutual : int, velocidadEnCadena : String) {
+    func cambioDeVelocidad() -> (actual : int, velocidadEnCadena : String) {
         switch velocidad {
         case .Apagado:
             velocidad = .velocidadBaja
