@@ -16,17 +16,17 @@ class Auto {
     func cambioDeVelocidad() -> (acutual : int, velocidadEnCadena : String) {
         switch velocidad {
         case .Apagado:
-            velocidad = .VelocidadBaja
-            return (Velocidades.Apagado.rawValue, "Apagado")
+            velocidad = .velocidadBaja
+            return (Velocidades.apagado.rawValue, "Apagado")
         case .VelocidadBaja:
-            velocidad = .VelocidadMedia
-            return (Velocidades.VelocidadBaja.rawValue, "Velocidad Baja")
+            velocidad = .velocidadMedia
+            return (Velocidades.velocidadBaja.rawValue, "Velocidad Baja")
         case .VelocidadMedia:
-            velocidad = .VelocidadAlta
-            return (Velocidades.VelocidadMedia.rawValue, "Velocidad Media")
+            velocidad = .velocidadAlta
+            return (Velocidades.velocidadMedia.rawValue, "Velocidad Media")
         case .VelocidadAlta:
             velocidad = .VelocidadMedia
-            return (Velocidades.VelocidadAlta.rawValue, "Velocidad Alta")
+            return (Velocidades.velocidadAlta.rawValue, "Velocidad Alta")
         }
 
     } 
